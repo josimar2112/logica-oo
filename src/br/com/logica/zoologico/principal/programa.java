@@ -8,7 +8,7 @@ public class programa	 {
 		// criando uma nova instancia do objeto
 		Animal cachorro = new Animal(" Rex "," Cachorro ",2);
 		
-		System.out.println("ola seu animal é um " + cachorro.getespecie() + " , o nome dele é " + cachorro.getNome() + "e tem " + cachorro.getIdade() + " anos ");
+		System.out.println("ola seu animal é um " + cachorro.getEspecie() + " , o nome dele é " + cachorro.getNome() + "e tem " + cachorro.getIdade() + " anos ");
 		
 
 
