@@ -1,5 +1,10 @@
 package br.com.logica.zoologico.heranca;
 
-public class Gato {
+import br.com.logica.zoologico.classes.Animal;
 
-}
+public class Gato extends Animal {
+
+	
+	}
+
+
