@@ -9,18 +9,27 @@ public class Main {
 		Animal a1 = new Animal();
 
 		a1.setNome ("Jogo todinho");
-		a1.especie = "Gato";
-		a1.idade = 1;
+		a1.setEspecie  ("Gato");
+		a1.setIdade  (1);
 		
 		// criando um nova instancia do objeto
 		Animal a2 = new Animal();
 		
 		//atribuindo os valores as propriedades.
 		a2.setNome ("Spike");
-		a2.especie = "cachorro";
-		a2.idade = 3;
+		a2.setEspecie  ("cachorro");
+		a2.setIdade (3);
 		
-		System.out.println("O nome do meu anil é " + a2.getNome());
+		a2.emitirSon();
+		System.out.println("O nome do meu animal é " + a2.getNome());
+		
+		if (a2.isAdulto()) {
+			System.out.println("é adulto");
+					}else {
+						System.out.println("não é adulto");
+					}
+		
+		
 			}
 	
 }

@@ -34,4 +34,12 @@ public class Animal {
 
 	}
 
+	public void emitirSon() {
+		System.out.println("Som do anumal");
+	}
+
+	public boolean isAdulto() {
+		return idade >= 1;
+	}
+
 }
