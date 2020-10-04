@@ -1,19 +1,21 @@
 package br.com.logica.zoologico.principal;
 
 import br.com.logica.zoologico.classes.Animal;
+import br.com.logica.zoologico.heranca.Cachorro;
+import br.com.logica.zoologico.heranca.Gato;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// criando uma nova instancia do objeto
-		Animal a1 = new Animal();
+		Gato a1 = new Gato();
 
 		a1.setNome("Jogo todinho");
 		a1.setEspecie("Gato");
 		a1.setIdade(1);
 
 		// criando um nova instancia do objeto
-		Animal a2 = new Animal();
+		Cachorro a2 = new Cachorro();
 
 		// atribuindo os valores as propriedades.
 		a2.setNome("Spike");
