@@ -13,4 +13,9 @@ public class Gato extends Animal {
 
 	}
 
+	@Override
+	public void emitirSon() {
+		System.out.println(" Miando ");
+	}
+
 }

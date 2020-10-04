@@ -1,16 +1,17 @@
 package br.com.logica.zoologico.principal;
 
-import br.com.logica.zoologico.classes.Animal;
+import br.com.logica.zoologico.heranca.Cachorro;
 
-public class programa	 {
+public class programa {
 
 	public static void main(String[] args) {
 		// criando uma nova instancia do objeto
-		Cachorro cachorro = new Cachorro(" Rex "," Cachorro ",2);
-		
-		System.out.println("ola seu animal é um " + cachorro.getEspecie() + " , o nome dele é " + cachorro.getNome() + "e tem " + cachorro.getIdade() + " anos ");
-		
+		Cachorro cachorro = new Cachorro(" Rex ", " Cachorro ", 2);
 
+		System.out.println("ola seu animal é um " + cachorro.getEspecie() + " , o nome dele é " + cachorro.getNome()
+				+ "e tem " + cachorro.getIdade() + " anos ");
+
+		cachorro.emitirSon();
 
 		if (cachorro.isAdulto()) {
 			System.out.println("é adulto");
