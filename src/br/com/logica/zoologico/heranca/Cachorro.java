@@ -17,9 +17,18 @@ public class Cachorro extends Animal {
 	public void emitirSon() {
 		if (estaVivo) {
 			System.out.println(" Latindo ");
-		} else {
+		} else 
 			System.out.println("O Animal esta morto ");
 
 		}
+		
+	@Override
+	public boolean isAdulto() {
+		if (isEstaVivo()) {
+			return idade > 2;
+		} else
+			return false;
+			
+		
 	}
 }

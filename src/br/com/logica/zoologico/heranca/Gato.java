@@ -22,4 +22,12 @@ public class Gato extends Animal {
 		}
 	}
 
+	@Override
+	public boolean isAdulto() {
+		if (isEstaVivo()) {
+			return idade > 1;
+		} else
+			return false;
+	}
+
 }
