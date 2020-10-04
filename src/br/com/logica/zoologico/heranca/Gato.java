@@ -15,7 +15,11 @@ public class Gato extends Animal {
 
 	@Override
 	public void emitirSon() {
-		System.out.println(" Miando ");
+		if (estaVivo) {
+			System.out.println(" Miando ");
+		} else {
+			System.out.println("O Animal esta morto ");
+		}
 	}
 
 }

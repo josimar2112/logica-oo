@@ -25,7 +25,7 @@ public class Main {
 		System.out.println("O nome do meu animal é " + a1.getNome() + " O animal é um " + a1.getEspecie());
 
 		if (a1.isAdulto()) {
-			System.out.println("é adulto");
+			System.out.println(" Ele tem "+ a1.getIdade()+" Anos , ele " + "é adulto");
 		} else {
 			System.out.println("não é adulto");
 		}	
@@ -35,9 +35,9 @@ public class Main {
 		System.out.println("O nome do meu animal é " + a2.getNome() + " O animal é um " + a2.getEspecie());
 
 		if (a2.isAdulto()) {
-			System.out.println("é adulto");
+			System.out.println(" Ele tem "+ a2.getIdade()+" Anos , ele " + "é adulto");
 		} else {
-			System.out.println("não é adulto");
+			System.out.println(" Ele tem "+ a2.getIdade()+" Anos , ele " + "não é adulto");
 		}
 
 	}
