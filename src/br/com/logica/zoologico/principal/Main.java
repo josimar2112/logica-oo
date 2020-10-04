@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// criando uma nova instancia do objeto
-		Gato a1 = new Gato("maya" ," Gato " , 1);
+		Gato a1 = new Gato("maya" ," Gato " , 12);
 
 		//a1.setNome("Jogo todinho");
 		//a1.setEspecie("Gato");
@@ -20,9 +20,19 @@ public class Main {
 		//a2.setNome("Spike");
 		//a2.setEspecie("cachorro");
 		//a2.setIdade(3);
+		
+		a1.emitirSon();
+		System.out.println("O nome do meu animal é " + a1.getNome() + " O animal é um " + a1.getEspecie());
+
+		if (a1.isAdulto()) {
+			System.out.println("é adulto");
+		} else {
+			System.out.println("não é adulto");
+		}	
+			System.out.println("--------------------------------------------------------------------");
 
 		a2.emitirSon();
-		System.out.println("O nome do meu animal é " + a2.getNome());
+		System.out.println("O nome do meu animal é " + a2.getNome() + " O animal é um " + a2.getEspecie());
 
 		if (a2.isAdulto()) {
 			System.out.println("é adulto");
@@ -31,5 +41,5 @@ public class Main {
 		}
 
 	}
-
+	
 }
