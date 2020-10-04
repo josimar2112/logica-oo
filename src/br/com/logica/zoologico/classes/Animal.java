@@ -62,7 +62,9 @@ public abstract class Animal {
 		return estaVivo;
 	}
 
-	public void morrer() {
+//quando adicionado o final no metodo
+	// é impossivel fazer a sobrescretia de um metodo pelas classes filhas
+	public final void morrer() {
 		this.estaVivo = false;
 	}
 }
