@@ -43,6 +43,10 @@ SELECT * FROM ANIMAL;
 -- ADICIONAR COLUNAS
 ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
 
+UPDATE animal
+set nome = 'jojo todinho' WHERE codigo = 1;
+
+
 
 
 
