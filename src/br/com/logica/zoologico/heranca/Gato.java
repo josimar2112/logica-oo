@@ -14,7 +14,7 @@ public class Gato extends Animal {
 	}
 
 	@Override
-	public void emitirSon() {
+	public void emitirSom() {
 		if (estaVivo) {
 			System.out.println(" Miando ");
 		} else {
@@ -28,6 +28,17 @@ public class Gato extends Animal {
 			return idade > 1;
 		} else
 			return false;
+	}
+
+	private boolean isEstaVivo() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void morrer() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -14,7 +14,7 @@ public class Cachorro extends Animal {
 	}
 
 	@Override
-	public void emitirSon() {
+	public void emitirSom() {
 		if (estaVivo) {
 			System.out.println(" Latindo ");
 		} else 
@@ -29,6 +29,15 @@ public class Cachorro extends Animal {
 		} else
 			return false;
 			
+		
+	}
+
+	private boolean isEstaVivo() {
+		return false;
+	}
+
+	@Override
+	public void morrer() {
 		
 	}
 }
