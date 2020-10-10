@@ -30,7 +30,7 @@ public class DesafioHerncaClasseAbstrata {
 		Livro a = new MeuLivro();
 		a.setTitulo(scann.nextLine());
 
-		System.out.println(a.getTitulo);
+		System.out.println(a.getTitulo());
 
 	}
 }
