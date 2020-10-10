@@ -10,7 +10,10 @@ CREATE TABLE `zoo`.`animal` (
   `idade` INT NULL,
   `estavivo` TINYINT NULL,
   PRIMARY KEY (`codigo`));
-
+  
+  
+  
+-- DEFINIÇOES DE COMANDOS
   DDL - DATA DEFINITION LANGUAGE - LINGUAGEM DE DEFINIÇÃO DE DADOS
 CREATE TABLE
 ALTER TABLE
@@ -21,3 +24,19 @@ CREATE   ---- INSERT  ---- INSERIR
 READ     ---- SELECT  ---- CONSULTAR
 UPDATE   ---- UPDATE  ---- ALTERAR 
 DELETE   ---- DELETE  ---- EXCLUIR
+
+
+--inserindo registros 
+
+use zoo;
+
+INSERT INTO animal(especie, idade, estavivo)values("rato",2,1);
+INSERT INTO animal(especie, idade, estavivo)values("cachorro",5,1);
+INSERT INTO animal(especie, idade, estavivo)values("hipopotamo",8,1);
+INSERT INTO animal(especie, idade, estavivo)values("canelo",3,0);
+
+-- consultando os registros
+
+SELECT especie, idade, estavivo FROM animal;
+
+
