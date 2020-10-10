@@ -38,5 +38,11 @@ INSERT INTO animal(especie, idade, estavivo)values("canelo",3,0);
 -- consultando os registros
 
 SELECT especie, idade, estavivo FROM animal;
+SELECT * FROM ANIMAL;
+
+-- ADICIONAR COLUNAS
+ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
+
+
 
 
