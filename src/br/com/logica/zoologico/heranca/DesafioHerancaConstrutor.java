@@ -24,7 +24,7 @@ class ProgramadorDesafio extends PessoaDesafio{
         super(nome, idade);
     }
 
-    public ProgramadorDesafio(String nome, int idade, String linguagem) {
+    public ProgramadorDesafio(Strinnnnng nome, int idade, String linguagem) {
         super(nome, idade);
         this.linguagem = linguagem;
     }
