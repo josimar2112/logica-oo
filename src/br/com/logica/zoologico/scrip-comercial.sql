@@ -245,6 +245,15 @@ insert into item_venda values(40,17,5,'2325.32',5,0);
 insert into item_venda values(41,18,5,'2325.32',6,0);
 ## Fim popula tabela  Itens Vendas
 
+
+-- consulta simples em uma unica tabela--
+
+ SELECT * FROM produto;
+select * from fornecedor where id = 2;
+
+-- consulta ligando tabelas -- 
+
+select p.descricao, p.valor, p.id_fornecedor, f.nome from produto p inner join forncedor f on p.id_fornecedor = f.id;
     
     
     
