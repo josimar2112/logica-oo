@@ -257,7 +257,14 @@ select p.descricao, p.valor, p.id_fornecedor, f.nome from produto p inner join f
     
     
     
-    
+    -- consulta simples em uma unica tabela--
+
+ SELECT * FROM produto;
+select * from fornecedor where id = 2;
+
+-- consulta ligando tabelas -- 
+
+select p.descricao, p.valor, p.id_fornecedor, f.nome from produto p inner join forncedor f on p.id_fornecedor = f.id;
     
     
     
