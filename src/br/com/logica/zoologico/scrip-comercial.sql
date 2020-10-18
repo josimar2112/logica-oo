@@ -71,6 +71,41 @@ insert into cliente (codigo_cliente , nome , razao_social, data_cadastro , cnpj 
     primary key(id));
     
     -- fim da criação das Tabelas -- 
+
+   -- remover todos os clientes --
+    truncate cliente;
+    select * from cliente;
+    
+    -- inicio alteração de tabelas --
+    
+    alter table cliente add column cidade varchar (50);
+    
+        -- mostra a estrutura fisica da tabela
+    
+    describe cliente;
+    
+    
+    alter table cliente add column estado varchar (50);
+    
+	alter table cliente drop column estado;
+    
+	alter table cliente add column estado varchar (50);
+    
+    alter table cliente modify column estado int;
+    
+    alter table cliente modify column estado varchar (100);
+  
+
+  -- fim da alteração de tabelas --
+
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
