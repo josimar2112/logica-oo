@@ -282,6 +282,11 @@ from produto p;
 
 select * from produto;
 select count(*) from produto;
+
+select v.codigo_venda , v.id_vendedor , v.id_cliente,v.valor
+from venda v
+having v.valor > 9000
+order by 4 asc ;
     
     
     
