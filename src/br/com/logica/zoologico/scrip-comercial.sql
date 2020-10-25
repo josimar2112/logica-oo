@@ -268,7 +268,11 @@ select p.descricao, p.valor, p.id_fornecedor, f.nome from produto p inner join f
     
     
     
-    
+   select c.nome as "Nome Cliente", f.nome as "Nome do Fornecedor" , vend.nome as "Nome do Fornecedor",
+ v.valor , concat( v.desconto ,' %') as desconto, concat(" R$ " v.total) as total_venda from venda v 
+inner join fornecedor f on v.id_fornecedor = f.id
+inner join cliente c on v.id_cliente = c.id
+inner join vendedor vend on v.id_vendedor = vend.id; 
     
     
     
