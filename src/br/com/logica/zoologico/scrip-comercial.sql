@@ -274,6 +274,10 @@ inner join fornecedor f on v.id_fornecedor = f.id
 inner join cliente c on v.id_cliente = c.id
 inner join vendedor vend on v.id_vendedor = vend.id; 
     
+
+select format (avg(p.valor),2) as 'media preço com format',
+avg (p.valor) as 'media preço sem format'
+from produto p;
     
     
     
