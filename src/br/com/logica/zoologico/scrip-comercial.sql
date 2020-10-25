@@ -288,7 +288,10 @@ from venda v
 having v.valor > 9000
 order by 4 asc ;
     
-    
+    select max(valor) as "maior valor de venda", 
+min(valor) as "menor valor de venda"
+from venda;
+
     
     
     
