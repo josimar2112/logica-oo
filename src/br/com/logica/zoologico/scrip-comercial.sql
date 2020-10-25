@@ -292,6 +292,12 @@ order by 4 asc ;
 min(valor) as "menor valor de venda"
 from venda;
 
+
+select sum(valor) from produto;
+select concat("R$ " , format (sum(valor),2)) as 'total valor de produtos' from produto;
+
+select lower(nome) from cliente;
+select upper(descricao) from produto;
     
     
     
