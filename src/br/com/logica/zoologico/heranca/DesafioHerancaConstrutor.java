@@ -60,8 +60,10 @@ public class DesafioHerancaConstrutor {
      */
 
 
-    public static void main(String []args){
-        Scanner scann = new Scanner(System.in);
+    private static Scanner scann;
+
+	public static void main(String []args){
+        scann = new Scanner(System.in);
 
         PessoaDesafio a = new ProgramadorDesafio(scann.nextLine(), Integer.valueOf(scann.nextLine()), scann.nextLine());
 

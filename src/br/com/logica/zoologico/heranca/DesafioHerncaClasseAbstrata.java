@@ -27,10 +27,7 @@ public class DesafioHerncaClasseAbstrata {
 	public static void main(String[] args) {
 		Scanner scann = new Scanner(System.in);
 
-		Livro a = new MeuLivro();
-		a.setTitulo(scann.nextLine());
-
-		System.out.println(a.getTitulo());
+	
 
 	}
 }

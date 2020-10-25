@@ -33,10 +33,12 @@ class GatoDesafio extends AnimalDesafio {
 
 public class DesafioSobrescritaMetodo {
 
+	private static Scanner scann;
+
 	public static void main(String[] args) {
 		AnimalDesafio a = new GatoDesafio();
 
-		Scanner scann = new Scanner(System.in);
+		scann = new Scanner(System.in);
 		a.setNome(scann.nextLine());
 
 		System.out.println(a.getEspecie());
