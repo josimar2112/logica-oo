@@ -310,6 +310,12 @@ select str_to_date('2013', '%y');
 -- consulta data e hora--
 select now();
 
+
+-- retorna o dia do mes de uma data
+select dayofmonth(data_venda)from venda;
+
+## retorna o valor numerico do dia da semana --
+select dayofweek(data_venda) from venda;
     
     
     
