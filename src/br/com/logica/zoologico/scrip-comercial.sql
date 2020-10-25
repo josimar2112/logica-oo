@@ -298,6 +298,18 @@ select concat("R$ " , format (sum(valor),2)) as 'total valor de produtos' from p
 
 select lower(nome) from cliente;
 select upper(descricao) from produto;
+
+-- completa ua string a direita com o caractere desejado--
+select rpad(descricao,10, '***') from produto;
+
+-- consulta com funcçoes de tempo
+-- diferenca entre datas--
+select datediff('2015-03-17','2015-03-15');
+-- converter de string para data --
+select str_to_date('2013', '%y');
+-- consulta data e hora--
+select now();
+
     
     
     
