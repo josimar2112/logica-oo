@@ -278,6 +278,10 @@ inner join vendedor vend on v.id_vendedor = vend.id;
 select format (avg(p.valor),2) as 'media preço com format',
 avg (p.valor) as 'media preço sem format'
 from produto p;
+
+
+select * from produto;
+select count(*) from produto;
     
     
     
